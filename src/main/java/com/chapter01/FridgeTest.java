@@ -15,7 +15,7 @@ public class FridgeTest {
 
 		FridgeMethodInterceptor cglib = new FridgeMethodInterceptor();
 		fridge = cglib.getProxy(FridgeImpl.class);
-		fridge.put("原始象");
+		fridge.put("猛犸象");
 
 	}
 
