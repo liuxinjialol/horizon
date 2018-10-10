@@ -1,8 +1,10 @@
 package com.chapter06;
 
-import java.lang.reflect.Method;
-
 public class Person {
+	
+	static  {
+		System.out.println("init method");
+	}
 	
 	String name;
 	
@@ -30,17 +32,6 @@ public class Person {
 
 	public void setAge(int age) {
 		this.age = age;
-	}
-	
-	public static void main(String[] args) throws Exception{
-		Class<?> c=ClassUtil.loadClass("com.chapter06.Person");
-		Person person=(Person)c.newInstance();
-		
-		Method work=c.getDeclaredMethod("work");
-		System.out.println(work.invoke(person));
-		
-		Method eat=c.getDeclaredMethod("eat",String.class);
-		System.out.println(eat.invoke(person,"apple"));
 	}
 
 }
