@@ -34,7 +34,6 @@ public class JoinExample {
 					Thread.sleep(2000);
 					System.out.println("统计D盘");
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -47,7 +46,6 @@ public class JoinExample {
 					Thread.sleep(2000);
 					System.out.println("统计E盘");
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -60,7 +58,6 @@ public class JoinExample {
 					Thread.sleep(3000);
 					System.out.println("统计F盘");
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -74,7 +71,6 @@ public class JoinExample {
 					Thread.sleep(3000);
 					System.out.println("汇总");
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
