@@ -5,6 +5,11 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * CyclicBarrier --> ReentrantLock
+ *
+ */
+
 public class CyclicBarrierExample {
 	public static void main(String[] args) {
 		Runnable barrierAction = new Runnable() {
