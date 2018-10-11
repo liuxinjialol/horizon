@@ -1,6 +1,6 @@
-package com.chapter09.client;
+package com.chapter20.client;
 
-import com.chapter09.business.ICakeService;
+import com.chapter20.business.ICakeService;
 
 public class ClientTest {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.chapter09.client;
+package com.chapter20.client;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
