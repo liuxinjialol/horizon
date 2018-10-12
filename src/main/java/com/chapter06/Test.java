@@ -13,7 +13,13 @@ public class Test {
 		 * 
 		 */
 		
-		Class.forName("com.chapter06.Person");
+		Class<?>  entity=Class.forName("com.chapter06.Person");
+		System.out.println(entity.getName());
+		System.out.println(entity.getPackage());
+		
+		System.out.println(entity.getDeclaredFields());
+		System.out.println(entity.getDeclaredAnnotations());
+		System.out.println(entity.getDeclaredMethods());
 		
 		ClassLoader loader = ClassLoader.getSystemClassLoader();
 		loader.loadClass("com.chapter06.Person").newInstance();
@@ -24,6 +30,7 @@ public class Test {
 		
 		Class<?> c=ClassUtil.loadClass("com.chapter06.Person");
 		Person person=(Person)c.newInstance();
+		
 		
 		Method work=c.getDeclaredMethod("work");
 		System.out.println(work.invoke(person));
